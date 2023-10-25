@@ -22,6 +22,11 @@
         color: #9F9F9F;
         font-size: 16px;
     }
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 body {
@@ -76,7 +81,7 @@ body {
             }
 
             .row {
-                .col {
+                .col-xxl-4 {
                     button {
                         padding-top: 9px;
                         padding-left: 22px;
@@ -101,12 +106,12 @@ body {
             }
 
             .row {
-                .col-4 {
+                .col-xxl-4 {
+                    max-width: 539px;
                     h1 {
                         color: white;
                         font-size: 50px;
                         margin: 0;
-                        margin-top: 90px;
                     }
 
                     p {
@@ -128,8 +133,7 @@ body {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center; 
-                    background: url('../src/main-strow.svg') no-repeat;
-                    background-position: left top 20%;
+                    max-width: 539px;
 
                     p {
                         padding-top: 29px;
@@ -175,7 +179,7 @@ body {
                 min-height: 118px;
                 width: 100%;
 
-                .col {
+                .col-md-3 {
                     .accordion-item {
                         border: none;
                     }
@@ -230,12 +234,14 @@ body {
 
         .container{
             .row{
-                .col-6{
+                .col-xl-6{
+                    max-width: 567px;
                     .space-div {
                         height: 100%;
                         display: flex;
                         justify-content: center;
                         flex-direction: column;
+                        
                     }
                     h1 {
                         font-size: 48px;
@@ -281,6 +287,7 @@ body {
         width: 100%;
         background-color: #1D2B38;
         padding-top: 62px;
+        margin-top: 100px;
 
         h1 {
             color: white;
@@ -327,7 +334,8 @@ body {
         margin-top: 126px;
         .container{
             .row{
-                .col-6 {
+                .col-xl-6 {
+                    max-width: 567px;
                     h1 {
                         font-size: 48px;
                         font-weight: 700;
@@ -388,7 +396,7 @@ body {
             display: flex;
             flex-direction: column;
             align-content: center;
-            min-height:150px;
+            min-height: 150px;
             max-width: 903px;
             margin-top: 52px;
 
@@ -509,7 +517,8 @@ body {
                     color: #FF5A3C;
                 }
 
-                .col {
+                .col-xl-3 {
+                    padding: 25px;
                     p {
                         margin-top: 26px;
                         
@@ -621,4 +630,151 @@ body::-webkit-scrollbar-thumb {
     background-color: #FF5A3C;    /* цвет бегунка */
     border-radius: 20px;       /* округлось бегунка */
     border: 3px solid white;  /* отступ вокруг бегунка */
+}
+
+@media (max-width: 500px) {
+    * {
+        p {
+            font-size: 14px !important;
+    }
+
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+        line-height: 24px !important;
+    }
+
+    span {
+        font-size: 14px !important;
+    }
+
+    section {
+        margin-top: 50px !important;
+    }
+
+    button {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        padding-top: 11px !important;
+        padding-bottom: 11px !important;
+    }
+}
+    
+}
+
+@media (max-width: 767px) {
+    #text-nav {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1399px) {
+    body {
+        .search {
+            margin-top: 20px !important;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    * {
+        button {
+            font-size: 12px !important;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+            padding-top: 6px !important;
+            padding-bottom: 6px !important;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        .mySwiper {
+            max-width: 328px;
+            margin-top: 189px;
+    
+            h1 {
+                font-size: 48px;
+                font-weight: 700;
+            }
+    
+    
+            .swiper-container {
+                min-height: 183px;
+                max-width: 328px;
+                margin-top: 52px;
+    
+                .swiper-wrapper {
+                    .swiper-slide-active {
+                        min-height: 183px !important;
+                        width: 104px !important;
+    
+                        .ava-img {
+                            width: 104px !important;
+                            height: 104px !important;
+                        }
+    
+                        .text-people {
+                            
+                            h4 {
+                                // margin-top: 32px;
+                                font-size: 20px;
+                            }
+    
+                            .stars {
+                                margin-top: 11px;
+
+                                img {
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                            }
+    
+                            p {
+                                display: none !important;
+                            }
+                        }
+                    }
+    
+                    .swiper-slide-prev {
+                        width: 45px !important;
+                        height: 45px;
+                        
+                    }
+    
+                    .swiper-slide-next {
+                        width: 45px !important;
+                        height: 45px;
+                    }
+    
+                    .swiper-slide {
+                        height: 45px;
+    
+                        .ava-img {
+                            width: 45px;
+                            height: 45px;
+                            
+                        }
+    
+                        .text-people {
+                            display: none;
+                        }
+                    }
+                }
+    
+                .swiper-navigation {
+                    max-width: 270px;
+                    button {
+                        width: 16px;
+                        height: 11px;
+                    }
+                    
+                }
+            }
+        }
+    }
 }

@@ -2,15 +2,29 @@
 
 new Swiper('.swiper-container', {
     loop: true,
-    loopedSlides: 2,
+    loopedSlides: 4,
     centeredSlides: true,
-    slidesPerView: 3,
+    slidesPerView: 1,
     navigation: {
         prevEl: '.sw-prev',
         nextEl: '.sw-next',
     },
     spaceBetween: 114,
     speed: 750,
+
+    breakpoints: {
+        992: {
+            slidesPerView: 3,
+            loopedSlides: 2,
+        },
+
+        320: {
+            loopedSlides: 2,
+            centerSlides: true,
+            slidesPerView: 3,
+            spaceBetween: 50,
+        }
+    },
 })
 
 let bg_right_button = document.getElementById('sw-next'),
